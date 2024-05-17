@@ -1,0 +1,39 @@
+#%RAML 1.0 DataType
+
+type: object
+properties: 
+    trip_id?: string
+    vehicle:
+        type: object
+        required: true
+        properties:
+            plate: string
+    startDate: datetime
+    endDate: datetime
+    distance: integer
+    duration: integer
+    user:
+        type: object
+        required: true
+        properties: 
+            name: string
+            email: string
+    movementTime: integer
+    staticTime: integer
+    averageSpeed: integer
+    maxSpeed: integer
+    averageTemperature: integer
+    maxTemperature: integer
+    startCordinates:
+        type: object
+        required: true
+        properties:
+            latitude: number
+            longitude: number
+    endCordinates:
+        type: object
+        required: true
+        properties:
+            latitude: number
+            longitude: number
+

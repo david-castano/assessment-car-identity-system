@@ -1,0 +1,82 @@
+#%RAML 1.0
+title: trips-api
+
+types:
+    Trips: !include dataTypes/tripsDataTypes.raml
+
+securitySchemes:
+    tokenHeader:
+        type: x-custom-token
+        description: Token de acceso para autenticación
+
+/trips:
+    get:
+        queryParameters:
+            plate:
+                required: false
+            user: 
+                required: false
+            startDate:
+                required: false
+            endDate:
+                required: false
+        responses:
+            200:
+                body:
+                    application/json:
+                        type: Trips[]
+                        examples:
+                            output: !include examples/tripsExample.raml
+            400: 
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http400.raml
+            401:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http401.raml
+            500:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http500.raml
+            504:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http504.raml
+
+    post:
+        queryParameters:
+            trip_id:
+                required: false
+        body:
+            application/json:
+                type: Trips
+                examples:
+                    output: !include examples/tripsNoIDExample.raml
+        responses:
+            200:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http200.raml
+            400:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http400.raml
+            500:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http500.raml
+            504:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http504.raml
+
+            

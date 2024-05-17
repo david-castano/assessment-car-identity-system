@@ -1,0 +1,8 @@
+{
+    "vehicle_id": "Identificador único del vehiculo",
+    "brand": "Marca del vehiculo",
+    "model": "Modelo del vehiculo",
+    "year": "Año de fabricación del vehiculo",
+    "plate": "Placa del vehiculo",
+    "additionalInfo": "Información adicional del vehiculo"
+}

@@ -1,0 +1,11 @@
+{
+  "version": "1.0.1",
+  "apiVersion": "v1",
+  "descriptorVersion": "1.0.0",
+  "classifier": "raml",
+  "main": "alerts-api.raml",
+  "assetId": "alerts-api",
+  "groupId": "079a7903-97e1-4369-a51e-b796e65fc55a",
+  "organizationId": "079a7903-97e1-4369-a51e-b796e65fc55a",
+  "name": "alerts-api"
+}

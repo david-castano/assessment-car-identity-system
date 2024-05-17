@@ -1,0 +1,5 @@
+{
+    "stadistics_id": "Identificador único de la estadistica",
+    "type": "Tipo de estadistica",
+    "data": "Datos de la estadistica"
+}

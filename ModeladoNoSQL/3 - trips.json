@@ -1,0 +1,35 @@
+{
+    "trip_id": "Identificador único del recorrido",
+        "update": [
+            {
+                "vehicle": {
+                    "vehicle_id": "Identificador único del vehículo",
+                    "plate": "Placa del vehículo"
+                },
+                "startDate": "Fecha de inicio del recorrido",
+                "endDate": "Fecha de fin del recorrido",
+                "distance": "Distancia recorrida en metros",
+                "duration": "Duración del recorrido en segundos",
+                "user": {
+                    "user_id": "Identificador único del usuario",
+                    "name": "Nombre del usuario",
+                    "email": "Correo electrónico del usuario"
+                },
+                "movementTime": "Tiempo de movimiento en segundos",
+                "staticTime": "Tiempo estatico en segundos",
+                "averageSpeed": "Velocidad media en metros por segundo",
+                "maxSpeed": "Velocidad máxima en metros por segundo",
+                "averageTemperature": "Temperatura media en grados Centigrados",
+                "maxTemperature": "Temperatura máxima en grados Centigrados",
+                "startCordinates": {
+                    "latitude": "Latitud de inicio",
+                    "longitude": "Longitud de inicio"
+                },
+                "endCordinates": {
+                    "latitude": "Latitud de fin",
+                    "longitude": "Longitud de fin"
+                }
+            }
+        ]
+}
+

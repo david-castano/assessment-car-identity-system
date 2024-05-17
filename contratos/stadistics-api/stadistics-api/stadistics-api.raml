@@ -1,0 +1,78 @@
+#%RAML 1.0
+title: stadistics-api
+
+types:
+    Stadistics: !include dataTypes/StadisticsDataType.raml
+
+securitySchemes:
+    tokenHeader:
+        type: x-custom-token
+        description: Token de acceso para autenticación    
+
+/stadistics:
+    get: 
+        queryParameters:
+            type:
+                required: false
+            created_by:
+                required: false
+        responses:
+            200:
+                body:
+                    application/json:
+                        type: Stadistics[]
+                        examples:
+                            output: !include examples/stadisticsExamples.raml
+            400:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http400.raml
+            401:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http401.raml
+            500:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http500.raml
+            504:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http504.raml
+
+    post:
+        body:
+            application/json:
+                examples:
+                    output: !include examples/stadisticsNoIDExample.raml
+        responses:
+            200:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http200.raml
+            400:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http400.raml
+            401:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http401.raml
+            500:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http500.raml
+            504:
+                body:
+                    application/json:
+                        examples:
+                            output: !include examples/http504.raml
+            

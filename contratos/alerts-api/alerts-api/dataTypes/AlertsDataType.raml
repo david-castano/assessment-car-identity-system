@@ -1,0 +1,18 @@
+#%RAML 1.0 DataType
+
+type: object
+properties: 
+    alert_id?: string
+    type: string
+    vehicle:
+        type: object
+        required: true
+        properties:
+            vehicle_id: string
+            plate: string
+    dateTime: datetime
+    description: string
+    status: boolean
+    
+
+     

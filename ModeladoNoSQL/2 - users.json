@@ -1,0 +1,5 @@
+{
+    "user_id": "Identificador único del usuario",
+    "name": "Nombre del usuario",
+    "email": "Correo electrónico del usuario"
+}
