@@ -42,7 +42,7 @@
 
 En esta sección se  muestran  los componentes detallado que hacen parte de la realización del servicio y la ubicación de estos componentes  en los entornos de ejecución:
 
-![Diagrama de Componentes](Identity%20system%20car/Diagrama%20de%20componentes.drawio.png)
+![Diagrama de Componentes](carIdentitySystem/Diagrama%20de%20componentes.drawio.png)
 
 | Componente | Función |
 |-|-|
