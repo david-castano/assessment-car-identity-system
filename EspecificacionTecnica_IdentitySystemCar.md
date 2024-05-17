@@ -12,7 +12,7 @@
 | Nro | Nombre | Descripción |
 |:-:|-|-|
 | 1 |**Contratos** (Especificación técnica del api)| [vehicles-api](contratos/vehiculos-api/vehicles-api/vehicles-api.raml)<br> [users-api](contratos/users-api/users-api/users-api.raml)<br> [trips-api](contratos/trips-api/trips-api/trips-api.raml)<br> [alerts-api](contratos/alerts-api/alerts-api/alerts-api.raml)<br> [stadistics-api](contratos/stadistics-api/stadistics-api/stadistics-api.raml)|
-| 2 |[**Diagrama de Componentes**](Identity%20system%20car/Diagrama%20de%20componentes.drawio.png)|Diagrama que muestra todos los componentes que interactúan en la solución|
+| 2 |[**Diagrama de Componentes**](carIdentitySystem/Diagrama%20de%20componentes.drawio.png)|Diagrama que muestra todos los componentes que interactúan en la solución|
 ||||
 
 ## <span style="color:DodgerBlue">3. Protocolos de seguridad en el desarrollo</span>
